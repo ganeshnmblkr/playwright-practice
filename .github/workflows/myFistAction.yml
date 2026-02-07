@@ -1,0 +1,10 @@
+name: MyFistAction
+on: workflow_dispatch
+job: 
+    first_Job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print greeting
+             run: echo "Hello World !!"
+             - name: Print GoodBye
+              run: echo "Done - bye!"
