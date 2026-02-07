@@ -7,6 +7,6 @@ jobs:
     first_job:
         runs-on: ubuntu_latest
 
-        steps:
+        steps: 
             - name: just chill
              run: echo "just chill"
