@@ -5,8 +5,14 @@ on:
 
 jobs:
     first_job:
-        runs_on: ubuntu_latest
+      runs_on: ubuntu_latest
 
         steps:
             -name: just chill
              run: echo "just chill"
+    second_job:
+      runs_on:
+
+        steps:
+          - name: print second job
+           run: echo "printing second job"
