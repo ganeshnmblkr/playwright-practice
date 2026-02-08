@@ -10,9 +10,5 @@ jobs:
         steps: 
             - name: just chill
               run: echo "just chill"
-      
-    second_job:
-      runs-on: ubuntu-latest
-        steps:
-          - name: print second job
-           run: echo "printing second job"
+            - name: print second job
+             run: echo "printing second job"
