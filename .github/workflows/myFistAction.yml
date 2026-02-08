@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  first_job:
+  Test:
     runs-on: ubuntu-latest
     steps:
       - name: print greeting
@@ -12,3 +12,11 @@ jobs:
 
       - name: Print GoodBye
         run: echo "Done - bye!"
+  Deploy: 
+    needs: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: deployment start
+        run: echo "Deployment started...."
+      - name: deployment completed
+        run: echo "deployment completed"
