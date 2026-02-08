@@ -5,8 +5,11 @@ on:
 
 jobs:
     first_job:
-      runs_on: ubuntu_latest
+        runs-on: ubuntu-latest
 
+        steps: 
+            - name: just chill
+              run: echo "just chill"
         steps:
             -name: just chill
              run: echo "just chill"
