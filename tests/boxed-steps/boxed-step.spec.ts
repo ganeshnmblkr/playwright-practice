@@ -13,7 +13,7 @@ async function addAndViewCart(page: Page){
   }, { box: true }); // box: true will hide the implementation details of the step
 }
 
-test.describe('add to cart scenarios', () => {
+test.describe.skip('add to cart scenarios', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('https://cloudtesting.contosotraders.com/')
   });

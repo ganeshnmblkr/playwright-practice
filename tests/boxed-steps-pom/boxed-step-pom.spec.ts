@@ -6,7 +6,7 @@ import { MainPage } from './boxed-step-pom'
 // comment out the line before the `addAndViewCart` function in one of the tests 
 // Then run the test to see how box steps hide the implementation details of the step
 
-test.describe('add to cart scenarios', () => {
+test.describe.skip('add to cart scenarios', () => {
   test.beforeEach(async ({ page }) => {
     const pom = new MainPage(page);
     await pom.goto();

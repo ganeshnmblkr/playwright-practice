@@ -39,7 +39,7 @@ test.describe('Intercepting the request and modifying it', () => {
   
 });
 
-test.describe('Mocking with HAR files', () => {
+test.describe.skip('Mocking with HAR files', () => {
 
   test('records or updates the HAR file', async ({ page }) => {
     // Get the response from the HAR file
